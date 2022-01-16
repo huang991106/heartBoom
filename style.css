@@ -8,10 +8,15 @@
   margin: 150px;
   position: relative;
   display: inline-block;
-  transition: all 1.5s;
+  animation: heartBoom 1.2s infinite;
 }
-#heart:hover {
-  transform: scale(1.5);
+@keyframes heartBoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 .bottom {
   height: 50px;
